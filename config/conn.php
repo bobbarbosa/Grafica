@@ -13,8 +13,5 @@ $conexao=mysql_connect($hostname,$user_db,$senha_db); mysql_select_db($banco_dad
      {
   echo "Erro na conexão com o banco de dados";exit; 
     } 
-else{
-   echo "Conexão bem sucedida";
-    }
 mysql_close();
 ?>
