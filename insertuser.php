@@ -14,11 +14,11 @@ include("config/conn.php");
 +	$sql .= "VALUES('$nome', '$matricula', '$cpf', '$cargo', '$senha')"; 
 +	
 +	if($resultado= mysql_query($sql)){
-+		header('listagem.php');
++		header("Location:listagem.php?aviso=1");
 +	}
 +	
 +	else{
-+		header('');
++		header('Location:listagem.php?aviso=2');
 +	};
 
 	
